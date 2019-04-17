@@ -13,7 +13,7 @@ public class Calculadora {
 		Scanner teclado = new Scanner(System.in);
 
 		do {
-			System.out.println( "Ingrese su operación \n 1 para sumar \n 2 para restar \n 3 para multiplicar \n 4 para dividir");
+			System.out.println( "Ingrese su operación \n 1 para multiplicar \n 2 para restar \n 3 para sumar \n 4 para dividir");
 			opcion = teclado.nextInt();
 			
 		} while (opcion < 1 && opcion > 4);
@@ -26,20 +26,20 @@ public class Calculadora {
 
 		switch(opcion){
 			case 1:
-			  System.out.println("El resultado de la suma es : "+(resultado=a+b));
+			  System.out.println("El resultado de la multiplicacion es : "+(resultado=a*b));
 			break;
 			
 			case 2:
-			  System.out.println("El resultado de la suma es : "+(resultado=a-b));
+			  System.out.println("El resultado de la resta es : "+(resultado=a-b));
 			break;
 			
 			case 3:
-			  System.out.println("El resultado de la suma es : "+(resultado=a*b));
+			  System.out.println("El resultado de la  suma es : "+(resultado=a+b));
 			break;
 			
 			case 4:
 			if(b!=0){
-			  System.out.println("El resultado de la suma es : "+(resultado=a/b));
+			  System.out.println("El resultado de la division es : "+(resultado=a/b));
 			}
 			else{
 				System.out.println("La division por 0 no existe");
