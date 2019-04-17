@@ -17,10 +17,10 @@ public class Calculadora {
 
 		switch (opcion) {
 		case 'a':
-			System.out.println("Ingrese el primer numero");
+			System.out.println("Ingrese el 1er numero");
 			a = teclado.nextDouble();
 
-			System.out.println("Ingrese el segundo numero");
+			System.out.println("Ingrese el 2do numero");
 			b = teclado.nextDouble();
 			System.out.println("El resultado de la suma es : " + (resultado = a + b));
 			break;
